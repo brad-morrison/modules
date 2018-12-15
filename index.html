@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Degree Path</title>
+	<style type="text/css">
+		
+		@keyframes slideInFromLeft {
+		0% {
+			transform: translateX(-100%);
+			opacity: 0;
+			}
+		100% {
+			transform: translateX(0);
+			opacity: 1;
+			}
+		}
+		
+		@keyframes slideInFromRight {
+		0% {
+			transform: translateY(90%);
+			opacity: 0;
+			}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+			}
+		}
+		
+		html {
+			font-family: Helvetica;
+			background-color: #262640;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		header {
+			background-color: black;
+			height: 70px;
+			width: 100%;
+		}
+
+		.header-title {
+			color: white;
+			text-align: center;
+			margin: 0;
+			padding: 15px 20px;
+			font-size: 25px;
+		}
+
+		.body-header {
+			width: 100%;
+			text-align: center;
+			font-size: 20px;
+			color: white;
+		}
+		
+		.block {
+			display:block;
+		}
+		
+		.table-box {
+			min-width: 490px;
+			max-width: 666px;
+			background-color: #e6f7ff;
+			border-radius: 15px;
+			width: 40%;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+			margin-bottom: 50px;
+			box-shadow: 0 15px #b3e7ff, 20px 40px 50px #070722, -20px 40px 50px #070722;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 10px;
+			animation: 1s ease-out 0s 1 slideInFromLeft;
+		}
+		
+		.table {
+			padding: 20px;
+			text-align: center;
+		}
+		
+		th {
+			padding: 5px 13px;
+			padding-bottom: 20px;
+			font-size: 18px;
+			color: #519ca9;
+		}
+		
+		td {
+			text-align: center;
+			padding: 5px 0;
+		}
+		
+		h2 {
+			margin-bottom: 5px;
+			animation: 1s ease-out 0s 1 slideInFromRight;
+		}
+		
+		h3 {
+			margin: 5px;
+			margin-bottom: 10px;
+			color: #999999;
+			font-size: 20px;
+			animation: 1s ease-out 0s 1 slideInFromRight;
+		}
+		
+		.name {
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+		<div class="block">
+			<div class="body-header">
+				<h2>University</h2>
+				<h3>BSc (Hons) Computing and Information Technology Practice | 2.1</h3>
+			</div>
+			
+			<div class="table-box">
+				<table class="table">
+					<tr>
+						<th>Module Name</th>
+						<th>Year</th>
+						<th>Credits</th>
+						<th>Marks</th>
+					</tr>
+					<tr>
+						<td class="name">The Computing and IT Project (Dissertation)</td>
+						<td>2018</td>
+						<td>30</td>
+						<td>Grade 2</td>
+					</tr>
+					<tr>
+						<td class="name">Interaction Design and the User Experience</td>
+						<td>2017</td>
+						<td>30</td>
+						<td>Grade 2</td>
+					</tr>
+					<tr>
+						<td class="name">IT Systems: Planning for Success</td>
+						<td>2017</td>
+						<td>30</td>
+						<td>Grade 2</td>
+					</tr>
+					<tr>
+						<td class="name">Software Engineering</td>
+						<td>2017</td>
+						<td>30</td>
+						<td>Grade 3</td>
+					</tr>
+					<!------------------------------------------------------>
+					<tr>
+						<td class="name">Object Oriented Analysis and Design</td>
+						<td>2016</td>
+						<td>20</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td class="name">Computer Systems 2B: Architecture and Operating Systems</td>
+						<td>2016</td>
+						<td>20</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td class="name">Algorithms and Artificial Intelligence</td>
+						<td>2016</td>
+						<td>20</td>
+						<td>D</td>
+					</tr>
+					<tr>
+						<td class="name">Information Technology</td>
+						<td>2015</td>
+						<td>20</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td class="name">Computer Systems 2A: Architecture Fundamentals and UNIX</td>
+						<td>2015</td>
+						<td>20</td>
+						<td>D</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<!------------------------------------------------>
+
+		<div class="block">
+			<div class="body-header">
+				<h2>College</h2>
+				<h3>HND Computer Software Development</h3>
+			</div>
+			
+			<div class="table-box">
+				<table class="table">
+					<tr>
+						<th>Module Name</th>
+						<th>Year</th>
+						<th>Credits</th>
+						<th>Marks</th>
+					</tr>
+					<tr>
+						<td class="name">Computing: Software Development: Graded Unit 2</td>
+						<td>2015</td>
+						<td>16</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td class="name">Multimedia: Developing Multimedia Applications</td>
+						<td>2015</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Software Development: Programming in PL/SQL</td>
+						<td>2015</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Software Development: Event Driven Programming</td>
+						<td>2015</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Software Development: Array Data Structures</td>
+						<td>2015</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Self Describing Data (XML)</td>
+						<td>2015</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Project Management 1</td>
+						<td>2015</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Professional Issues in Computing</td>
+						<td>2015</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<!------------------------------------------------------>
+					<tr>
+						<td class="name">Computing: Graded Unit 1</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td class="name">Relational Database Management Systems</td>
+						<td>2014</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Software Development: Structured Programming</td>
+						<td>2014</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Computer Architecture 1</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Computer Operating Systems 1</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Computing: Planning</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Information Technology: Applications Software 1</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Personal Development Planning</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Publishing on the Internet</td>
+						<td>2014</td>
+						<td>16</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">SQL: Introduction</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Systems Development: Introduction</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Systems Development: Structured Design Methods</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Web Development Fundamentals</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+					<tr>
+						<td class="name">Working within a Project Team</td>
+						<td>2014</td>
+						<td>8</td>
+						<td>Pass</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		
+		
+		<!------------------------------------------>
+		
+		<div class="block">
+			<div class="body-header">
+				<h2>High School</h2>
+			</div>
+			
+			<div class="table-box">
+				<table class="table">
+					<tr>
+						<th>Module Name</th>
+						<th>Year</th>
+						<th>Credits</th>
+						<th>Marks</th>
+					</tr>
+					<tr>
+						<td class="name">Higher English</td>
+						<td>2010</td>
+						<td>24</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td class="name">Higher Drama</td>
+						<td>2009</td>
+						<td>24</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td class="name">Higher Human Biology</td>
+						<td>2013</td>
+						<td>24</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td class="name">Higher Physical Education</td>
+						<td>2010</td>
+						<td>24</td>
+						<td>D</td>
+					</tr>
+					<tr>
+						<td class="name">Higher Media Studies</td>
+						<td>2009</td>
+						<td>24</td>
+						<td>D</td>
+					</tr>
+					<tr>
+						<td class="name">Intermediate 2 English</td>
+						<td>2009</td>
+						<td>24</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td class="name">Intermediate 2 Graphic Communication</td>
+						<td>2009</td>
+						<td>24</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td class="name">Intermediate 2 Mathematics</td>
+						<td>2009</td>
+						<td>24</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade Drama</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade English</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade Graphic Communication</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade Music</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade Physics</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade Mathematics</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade German</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td class="name">Standard Grade Computing Studies</td>
+						<td>2008</td>
+						<td>24</td>
+						<td>3</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+	
+	
+</body>
+
+
+
+</html>
